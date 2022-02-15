@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url('assets/img/main-bg.jpg');
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    object-fit: contain;
+}
+
+
+/* Position text in the middle of the page/image */
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 40px;
+    border: 3px solid antiquewhite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}

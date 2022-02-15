@@ -1,0 +1,10 @@
+app-navbar {
+    height: 100px
+}
+
+app-home {
+    align-self: center;
+    justify-self: center;
+    margin: 25px;
+    top: 100px;
+}

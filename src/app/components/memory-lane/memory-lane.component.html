@@ -1,0 +1,10 @@
+<div class="memories-container">
+    <div *ngFor="let memory of memories" class="memory-piece">
+        <iframe class="video-memory" width="560" height="315" [src]="memory.src | secureDOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="footer">
+            <p>
+                DATOS: [<span *ngFor="let location of memory.location"> {{ location }}; </span>] - {{ memory.release_date | date: "MMMM YYYY":"ES" }}
+            </p>
+        </div>
+    </div>
+</div>

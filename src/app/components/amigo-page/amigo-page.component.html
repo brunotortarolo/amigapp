@@ -1,0 +1,19 @@
+<div class="carousel-container" aria-label="Gallery">
+    <div class="title-box">
+        <h1>
+            {{ amigo.nick_name || amigo.name }} <small>({{ amigo.dob | age }})</small>
+        </h1>
+    </div>
+    <div class="img-container">
+        <div *ngFor="let img of amigo?.photos?.images; let i = index">
+            <img [ngClass]="{
+          active: i === random,
+          invisible: i !== random,
+          fade: true
+        }" [src]="'assets/img' + amigo?.photos?.dir + '/' + img + '.jpg'" alt="amigo.name" />
+        </div>
+    </div>
+    <div class="story-container">
+        <app-story-box [amigo]="amigo"></app-story-box>
+    </div>
+</div>

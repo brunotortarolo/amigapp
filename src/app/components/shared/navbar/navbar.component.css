@@ -1,0 +1,55 @@
+.navbar-container {
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+}
+
+.navbar-jumbotron {
+    height: 100%;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-controls {
+    height: 80px;
+    top: 520px;
+    position: initial;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgba(64, 60, 60, 0.898);
+}
+
+li {
+    width: 100%;
+    height: 100%
+}
+
+button {
+    width: 80%;
+    height: 80px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.571);
+    text-align: center;
+}
+
+button:hover {
+    color: antiquewhite;
+}
+
+.clicked {
+    color: antiquewhite;
+}
