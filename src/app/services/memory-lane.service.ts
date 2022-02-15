@@ -20,7 +20,7 @@ const MEMORIES: Memory[] = [
     release_date: '01/01/2017',
     location: ['Valizas', 'Cabo Polonio'],
   },
-  {
+  { 
     id: 4,
     src: 'http://www.youtube.com/embed/JnjIkqxnP7A',
     release_date: '01/01/2016',
