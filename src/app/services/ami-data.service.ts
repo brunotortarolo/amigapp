@@ -139,8 +139,8 @@ const AMIGOS: Amigo[] = [
   },
   {
     id: 'flor',
-    name: 'María',
-    middle_name: 'Florencia',
+    name: 'Florencia',
+    middle_name: 'María',
     last_name: 'Navarro',
     nick_name: 'Flor',
     dob: '01/01/1111',
@@ -163,8 +163,8 @@ const AMIGOS: Amigo[] = [
   },
   {
     id: 'belu',
-    name: 'María',
-    middle_name: 'Belén',
+    name: 'Belén',
+    middle_name: 'María',
     last_name: 'Fernández',
     nick_name: 'Belu',
     dob: '01/02/1997',

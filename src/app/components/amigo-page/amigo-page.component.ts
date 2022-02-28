@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Amigo } from 'src/app/models/amigos';
+
 import { AmiDataService } from 'src/app/services/ami-data.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AmigoPageComponent implements OnInit, OnDestroy{
 amigo: any;
-random: number = 0;
+index: number = 0;
 interval: any;
 
   constructor(private amiService: AmiDataService, private activatedRoute: ActivatedRoute) { }
@@ -19,7 +19,7 @@ interval: any;
    this.activatedRoute.params.subscribe(params =>{ 
      this.amigo = this.amiService.fetchSingleAmi(params['id'])
      this.interval = setInterval(()=>{
-       this.random !== 4? this.random++: this.random = 0;
+       this.index !== 4? this.index++: this.index = 0;
      }, 10000)
    })
   }

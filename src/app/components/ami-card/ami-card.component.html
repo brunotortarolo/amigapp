@@ -1,24 +1,22 @@
-<div (click)="verAmigo(amigo.id)">
-    <div class="card-box">
-        <div class="card-img-container">
-            <img [src]="amigo.thumbnail | thumbnail" class="thumbnail" alt="amigo.name" />
-        </div>
-        <div class="title-box">
-            <h5 class="title">
-                {{ amigo.nick_name || amigo.name | uppercase }}
-            </h5>
+<div class="card-box" (click)="verAmigo(amigo.id)">
+    <div class="card-img-container">
+        <img [src]="amigo.thumbnail | thumbnail" class="thumbnail" alt="amigo.name" />
+    </div>
+    <div class="title-box">
+        <h5 class="title">
+            {{ amigo.nick_name || amigo.name | uppercase }}
+        </h5>
 
-            <small>({{ amigo.name }} {{ amigo.last_name || "missing data" }})
+        <small>({{ amigo.name }} {{ amigo.last_name || "missing data" }})
     </small>
-        </div>
+    </div>
 
-        <hr />
-        <div class="hobbies">
-            <ul>
-                <li *ngFor="let hobby of amigo.hobbies">
-                    {{hobby}}
-                </li>
-            </ul>
-        </div>
+    <hr />
+    <div class="hobbies">
+        <ul>
+            <li *ngFor="let hobby of amigo.hobbies">
+                {{hobby}}
+            </li>
+        </ul>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="carousel-container" aria-label="Gallery">
+<div class="amigo-page-container" aria-label="Gallery">
     <div class="title-box">
         <h1>
             {{ amigo.nick_name || amigo.name }} <small>({{ amigo.dob | age }})</small>
@@ -7,10 +7,10 @@
     <div class="img-container">
         <div *ngFor="let img of amigo?.photos?.images; let i = index">
             <img [ngClass]="{
-          active: i === random,
-          invisible: i !== random,
+          active: i === index,
+          invisible: i !== index,
           fade: true
-        }" [src]="'assets/img' + amigo?.photos?.dir + '/' + img + '.jpg'" alt="amigo.name" />
+        }" [src]="'assets/img' + amigo?.photos?.dir + '/' + img + '.jpg'" />
         </div>
     </div>
     <div class="story-container">
