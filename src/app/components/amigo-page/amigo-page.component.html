@@ -8,8 +8,7 @@
         <div *ngFor="let img of amigo?.photos?.images; let i = index">
             <img [ngClass]="{
           active: i === index,
-          invisible: i !== index,
-          fade: true
+          invisible: i !== index
         }" [src]="'assets/img' + amigo?.photos?.dir + '/' + img + '.jpg'" />
         </div>
     </div>
