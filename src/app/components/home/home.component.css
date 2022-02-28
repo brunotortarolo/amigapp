@@ -1,3 +1,8 @@
-img {
-    object-fit: contain;
+@media (max-width: 768px) {
+    .bg-text {
+        top: 65%;
+    }
+    .bg-image {
+        width: auto;
+    }
 }
